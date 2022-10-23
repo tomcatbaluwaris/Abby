@@ -1,0 +1,56 @@
+﻿
+@model IndexModel
+
+@{
+    
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<div>
+    <div class="container p-4">
+        <div class="row pt-4">
+            
+            <div class="col-6">
+                <a asp-page="CreateModel" class="btn btn-primary">
+                    Create New Category
+                </a>
+            </div>
+        </div>
+    </div>
+    <table class="table table-bordered table-striped" style="width: 100%">
+        <thead>
+        <tr>
+            <th>Category Name</th>
+            <th>Display Order</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var category in Model.Categories)
+        {
+     
+            <tr>
+                <td readonly="false"><input value="@category.Name"/></td>
+                <td readonly="false"><input value="@category.DisplayOrder"/></td>
+                <td>
+                    <a asp-page="Edit" asp-route-id="@category.Id" class="btn btn-primary mx-2">
+                        <i class="bi bi pencil square"></i>
+                    </a>
+                    <a asp-page="Delete" asp-route-id="@category.Id" class="btn btn-primary mx-2">
+                        <i class="bi bi trash fill"></i>
+                    </a>
+                </td>
+                <td></td>
+            </tr>    
+        }    </tbody>
+
+    </table>
+
+</div>
+</body>
+</html>
