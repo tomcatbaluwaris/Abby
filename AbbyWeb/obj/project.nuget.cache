@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "JyVAf2VoGurJaMEh31SA0jV2SfOEvSicB7Le0oZsAfRHKv6yb7fpf0Oj+txjidSSQNMmYSGgDT18USFWp2Od2A==",
+  "dgSpecHash": "cZPkZgViyasQr8OMnJPlcvRG/RX3gDoBMmYqeu5L3BG8VeOKvuEGpEMpM2SkRjWQItKib67yPQJpxq2CKwoGlQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\edvve\\RiderProjects\\AbbyWeb\\AbbyWeb\\AbbyWeb.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\edvve\\.nuget\\packages\\devexpressmvvm\\22.1.3\\devexpressmvvm.22.1.3.nupkg.sha512",
     "C:\\Users\\edvve\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\edvve\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\edvve\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
