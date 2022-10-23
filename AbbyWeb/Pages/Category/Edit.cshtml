@@ -1,20 +1,21 @@
-﻿
+﻿@page "{id:int}"
+@model MovieModel
 
-@page
-@model AbbyWeb.Pages.Category.CreateModel
-@using Microsoft.AspNetCore.Mvc.TagHelpers
-@* @model AbbyWeb.Model.Category *@
-@* @page "{id:int}" *@
 @{
+    ViewData["Title"] = "Details";
 }
 
 <!DOCTYPE html>
 
 <html>
 <head>
-    <title></title>
+    <title>
+    </title>
 </head>
 <body>
+<div>
+   
+</div>
 <div>
     <form method="post">
         <div class="border p-3 mt-4">
@@ -29,7 +30,6 @@
             <div class="mb-3">
                 <label asp-for="Category.DisplayOrder"></label>
                 <input type="text" name="DisplayOrder" class="form-control" asp-for="Category.DisplayOrder"/>
-                @* <span class="text-danger" asp-validation-for="Category.DisplayOrder"></span> *@
                 <span asp-validation-for="Category.DisplayOrder" class="text-danger"></span>
             </div>
             <button type="submit" class="btn btn-primary" style="width:150px">Create</button>

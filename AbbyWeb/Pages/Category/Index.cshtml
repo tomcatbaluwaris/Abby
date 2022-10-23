@@ -38,12 +38,13 @@
                 <td readonly="false"><input value="@category.Name"/></td>
                 <td readonly="false"><input value="@category.DisplayOrder"/></td>
                 <td>
-                    <a asp-page="Edit" asp-route-id="@category.Id" class="btn btn-primary mx-2">
-                        <i class="bi bi pencil square"></i>
+                    <a asp-page="Edit" href="/Edit/@category.Id" class="btn btn-primary mx-2">
+                                            <i class="bi bi pencil square"></i>
                     </a>
-                    <a asp-page="Delete" asp-route-id="@category.Id" class="btn btn-primary mx-2">
+                    @* <a asp-page="Delete" asp-route-id="Edit/@category.Id" class="btn btn-primary mx-2">  *@
+                    <a asp-page="Delete" href="/Edit/@category.Id" class="btn btn-primary mx-2">
                         <i class="bi bi trash fill"></i>
-                    </a>
+                    </a> 
                 </td>
                 <td></td>
             </tr>    

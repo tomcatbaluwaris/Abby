@@ -3,11 +3,11 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace AbbyWeb.Pages.Category
 {
-    public class EditModel : PageModel
+    public class MovieModel : PageModel
     {
         private ApplicationDbContext _applicationDbContext;
 
-        public EditModel(ApplicationDbContext applicationDbContext)
+        public MovieModel(ApplicationDbContext applicationDbContext)
         {
             _applicationDbContext = applicationDbContext;
         }
